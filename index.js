@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
             res.send('<h1>Error de conexión: ' + err.message + '</h1>');
         } else {
             res.send('<h1>¡Hola Mundo! Conexión a MySQL establecida correctamente.</h1>');
+            res.send(<img src="https://res.cloudinary.com/dal7aojdn/image/upload/v1771445107/geologia-montanas-formacion-misterios_iz66pg_ascvb9.webp" width="300">');
         }
     });
 });
@@ -25,3 +26,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor en puerto ${PORT}`);
 });
+
